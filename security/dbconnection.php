@@ -1,7 +1,7 @@
 <?php
 class DBConnection
 {
-  const HOST = 'localhost';
+  const HOST = 'ip-172-31-36-95';
   const PORT = 27017;
   const DBNAME = 'ESFDreamCamp';
   private static $instance;
