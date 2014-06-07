@@ -40,7 +40,7 @@ default:
                         <nav>
                                 <div id="nav-left">
                                         <a href="background.php">Background Data</a>
-                                        <a href="profile.php">Outcome Data</a>
+                                        <a href="outcome.php">Outcome Data</a>
                                 </div>
                                 <div id="nav-right">
                                         <a href="#support">Support</a>

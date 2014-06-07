@@ -11,7 +11,7 @@ case 'login':
   $username = $_POST['username'];
   $password = $_POST['password'];
   if ($user->authenticate($username, $password)) {
-    header('location: profile.php');
+    header('location: outcome.php');
     exit;
   } else {
     $errorMessage = "Username/password did not match.";
@@ -40,7 +40,7 @@ default:
                         <nav>
                                 <div id="nav-left">
                                         <a href="background.php">Background Data</a>
-                                        <a href="profile.php">Outcome Data</a>
+                                        <a href="outcome.php">Outcome Data</a>
                                 </div>
                                 <div id="nav-right">
                                         <a href="#support">Support</a>
@@ -58,7 +58,7 @@ default:
 <div id="innercontentarea">
 <div id="login-box">
 <div class="inner">
-<form id="login" action="login.php" method="post" accept-charset="utf-8">
+<form id="login" action="index.php" method="post" accept-charset="utf-8">
 <ul>
 <?php if(isset($errorMessage)): ?>
 <li><?php echo $errorMessage; ?></li>
